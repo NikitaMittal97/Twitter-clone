@@ -3,7 +3,7 @@ import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 
 const divStyle={
-    width: 300,
+    width: 325,
     marginLeft: 90,
     marginTop: 150,
     backgroundColor: 'white',
@@ -23,23 +23,8 @@ const hoverStyle= {
 }
 
 export default class TrendsList extends React.Component {
-  constructor() {
-    super();
-    this.state = { color: "black"};
-    this.onMouseover=this.onMouseover.bind(this);
-    this.onMouseout=this.onMouseout.bind(this);
-  }
-
-  onMouseover(e) {
-    this.setState({color: "blue"})
-  }
-
-  onMouseout(e) {
-    this.setState({color: "black"})
-  }
-
+ 
   render() {
-    const {color} = this.state
     return (
     <div style={divStyle}>
       <List>
@@ -49,33 +34,37 @@ export default class TrendsList extends React.Component {
           primaryText="#ChristmasEve"
           secondaryText="226K Tweets"
           hoverColor="white"
-          onMouseEnter={this.onMouseover}
-          onMouseLeave={this.onMouseout} >
-          </ListItem>
+          style={{color: '#00BCD4'}}
+        />
         <ListItem
           primaryText="#RKNagarElectionResult"
           secondaryText="48.7K Tweets"
           hoverColor="white"
+          style={{color: '#00BCD4'}}
         />
         <ListItem
           primaryText="#MohammedRafi"
           secondaryText="9K Tweets"
           hoverColor="white"
+          style={{color: '#00BCD4'}}
         />
         <ListItem
           primaryText="#JaiRamThakur"
           secondaryText="9,768 Tweets"
           hoverColor="white"
+          style={{color: '#00BCD4'}}
         />
         <ListItem
           primaryText="#AIADMK"
           secondaryText="2,435 Tweets"
           hoverColor="white"
+          style={{color: '#00BCD4'}}
         />
         <ListItem
           primaryText="TTV Dhinakaran"
           secondaryText="276K Tweets"
           hoverColor="white"
+          style={{color: '#00BCD4'}}
         />
       </List>
     </div>

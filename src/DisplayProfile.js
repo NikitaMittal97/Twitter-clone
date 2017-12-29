@@ -1,7 +1,7 @@
 import React from 'react'
 import CardHeader from 'material-ui/Card/CardHeader'
 import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
+import PhotoAdd from 'material-ui/svg-icons/image/photo-camera';
 import borderColor from 'material-ui/svg-icons/editor/border-color';
 
 const buttonStyle = {
@@ -33,7 +33,7 @@ const DisplayProfile = () => (
     <div >
     
     <div style={{
-        width: "300px",
+        width: "325px",
         height: "100px",
         backgroundColor: "#00BCD4",
         marginLeft: "90px",
@@ -42,7 +42,7 @@ const DisplayProfile = () => (
     } />
     
     <div style={{
-        width: "300px",
+        width: "325px",
         height: "130px",
         backgroundColor: "#FFFFFF",
         marginLeft: "90px",
@@ -51,7 +51,7 @@ const DisplayProfile = () => (
        <h3 style={style}>Nikita Mittal</h3>
        <p style={pStyle}>@nikitamittal97</p>
        <FloatingActionButton style={buttonStyle} zDepth={0}>
-        <ContentAdd />
+        <PhotoAdd />
        </FloatingActionButton>
        <div style={{clear:"both"}}>
        <h5 style={{float:"left", 

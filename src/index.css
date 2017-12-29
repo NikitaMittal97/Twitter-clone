@@ -10,4 +10,18 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 60px
 }
+
+.nav a:hover{
+  color: #00bcd4;
+  text-decoration: underline;
+  padding-right: 3;
+}
+
+.nav a:link{
+  color: darkgrey;
+  text-decoration: none;
+  padding-right: 3;
+}
+
