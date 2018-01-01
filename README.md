@@ -10,7 +10,7 @@ Write the following on you terminal locally
 `npm install`
 `npm start`
 
-# Note:
+## Note:
 * This page shows the main timeline page by default.
 * You can switch over to the search page by writing `<SearchPage />` in index.js
 * if you want to switch back to main timeline page write `<Timeline />` in the same page as above.
