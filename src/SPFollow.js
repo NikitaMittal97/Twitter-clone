@@ -26,23 +26,27 @@ const chipStyle= {
   borderStyle: "solid"
 }
 
-export default class SubheaderRight extends React.Component {
+const divStyle= {
+    marginTop: 20,
+    width: 325,
+    marginLeft: 90,
+    backgroundColor: "white",
+}
+
+export default class SearchFollow extends React.Component {
   
   render() {
     return (
   
   <div className="follow" 
-       style={{width: 285,
-              marginRight: 100,
-              marginTop: 20,
-              backgroundColor: "white",}}>
+       style={divStyle}>
     <List>
       <div>
-      <h3 style={{display:"inline", marginLeft:"10px"}}> Who to follow</h3>
-      <p style={{display:"inline", fontSize: "13px", color:"#00BCD4"}}>. Refresh. View all</p>
+      <h2 style={{display:"inline", marginLeft:"10px"}}> Who to follow</h2>
+      <p style={{display:"inline", fontSize: "14px", color:"#00BCD4"}}>. Refresh. View all</p>
       </div>
       <CardHeader
-          title="Eric Hoffman"
+          title="Malini Shah"
           subtitle={
             <Chip
             onClick={handleClick}
@@ -56,11 +60,11 @@ export default class SubheaderRight extends React.Component {
           }
           titleStyle={titleStyle}
           subtitleStyle={{width: "65px"}}
-          avatar="http://ilsmonline.org/wp-content/uploads/2017/01/EricHoffman-squashed.jpg"
+          avatar="https://cdn2.iconfinder.com/data/icons/person-gender-hairstyle-clothes-variations/48/Female-Side-comb-O-neck-512.png"
         />
         <hr color="#EEEEEE"/>
       <CardHeader
-        title="Grace Ng"
+        title="Sonali Grover"
         subtitle={<Chip
           onClick={handleClick}
           style={chipStyle}
@@ -71,11 +75,11 @@ export default class SubheaderRight extends React.Component {
         </Chip>}
         titleStyle={titleStyle}
         subtitleStyle={{width: "65px"}}
-        avatar="https://pbs.twimg.com/profile_images/714704731755700224/nrdyK6wt.jpg"
+        avatar="https://cdn0.iconfinder.com/data/icons/human-resources-and-strategy/80/Human_resource_strategy-01-512.png"
       />
       <hr color="#EEEEEE"/>
      <CardHeader
-      title="Raquel Parrado"
+      title="Siddharth Goswami"
       subtitle={<Chip
         onClick={handleClick}
         style={chipStyle}
@@ -86,7 +90,7 @@ export default class SubheaderRight extends React.Component {
       </Chip>}
       titleStyle={titleStyle}
       subtitleStyle={{width: "65px"}}
-      avatar="https://i1.rgstatic.net/ii/profile.image/AS%3A502918040489984%401496916412050_xl/Raquel_Prado3.png"
+      avatar="http://164.100.150.10/gyanjyoti/Img/boy.png"
     />
     <hr color="#EEEEEE"/> 
     <div style={{marginLeft:"10px", display:"inline"}}>
@@ -101,4 +105,3 @@ export default class SubheaderRight extends React.Component {
       );
     };
   };
-

@@ -5,7 +5,7 @@ import Bell from 'material-ui/svg-icons/social/notifications';
 import FlatButton from 'material-ui/FlatButton';
 import Moments from 'material-ui/svg-icons/hardware/toys';
 import FontAwesome from 'react-fontawesome';
-import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar';
+import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
 import Chip from 'material-ui/Chip';
 import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
@@ -43,50 +43,50 @@ export default class ToolBar extends React.Component {
   primary={true}
   labelStyle={{textTransform: "none"}}
   style={{marginLeft: 90, marginRight: 0}}
-  hoverColor= "white"
+  hoverColor= "#FAFAFA"
 />
 <FlatButton
 label="Moments"
 icon={<Moments />}
 labelStyle={{textTransform: "none"}}
 style={{marginRight: 0, color: "grey"}}
-hoverColor= "white"
+hoverColor= "#E0F7FA"
 />
 <FlatButton
 label="Message"
 icon={<Message />}
 labelStyle={{textTransform: "none"}}
 style={{marginRight: 0, color: "grey"}}
-hoverColor= "white"
+hoverColor= "#E0F7FA"
 />
 <FlatButton
 label="Notification"
 icon={<Bell />}
 labelStyle={{textTransform: "none", }}
 style={{marginRight: 0, color: "grey"}}
-hoverColor= "white"
+hoverColor= "#E0F7FA"
 />
   <div>
-  <FontAwesome name='twitter' 
-               size='2x' 
-               style={{color: '#00BCD4', 
-                       position: 'fixed',
-                       left: 700,
-                      top:10}} />
+      <FontAwesome name='twitter' 
+                  size='2x' 
+                  style={{color: '#00BCD4', 
+                          position: 'fixed',
+                          left: 700,
+                          top:10}} />
   </div>
   <div>
-  <Chip style={{width: 200, 
-                height: 40,
-                position:'fixed',
-                left: 850,
-                top: 10,
-                backgroundColor: '#F5F5F5',
-              }}>
+    <Chip style={{width: 200, 
+      height: 40,
+      position:'fixed',
+      left: 850,
+      top: 10,
+      backgroundColor: '#ECEFF1',
+    }}>
     <TextField hintText="Search Twitter" 
                style={{width: 150, 
                        height: 40,}}/>
-    <Search />
-  </Chip>
+    <Search/>
+  </Chip> 
   </div>
 <IconMenu
 iconButtonElement={<IconButton><AccountIcon/></IconButton>}
